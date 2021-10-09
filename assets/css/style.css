@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pathway+Gothic+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    color:#3a3a3a;
+}
+
+/* headings and logo */
+
+
+h1, h2 {
+    font-family: Pathway Gothic One, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #3a2c30;
+}
+
+#logo {
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 2px solid #9271a7;
+}
+
+.active {
+        border-bottom: 2px solid #9271a7;
+}
+
+/* hero-image and cover text*/
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: #fff;
+    text-align: center;
+}
+
+#hero-image {
+    height: 600px;;
+    width: 100%;
+    background: url('../images/mother-daughter3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Pathway Gothic, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 140px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(169, 109, 173, .5);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
+}
+
+/* Media queries for larger to medium screens from 1200px and down */
+
+@media screen and (max-width: 1200px) {
+
+}
+
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+}
+
+    @media only screen and (max-width: 480px) {
+        img {
+        width: 100%;
+        }
+        }
+
