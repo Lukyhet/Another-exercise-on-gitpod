@@ -15,7 +15,15 @@ body {
 /* headings and logo */
 
 
-h1, h2 {
+
+h1 {
+    font-family: Pathway Gothic One, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #3a2c30;
+}
+
+h2 {
     font-family: Pathway Gothic One, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -23,41 +31,49 @@ h1, h2 {
 }
 
 #logo {
-    float: left;
+    
     font-size: 280%;
-    margin-left: 30px;
-    cursor: pointer;
+    text-align: center;
 }
 
 #menu, #logo {
     line-height: 75px;
 }
 
+.logo {
+    text-decoration: none;
+}
+
 /* navigation links */
+
 
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
+    text-decoration: none;
+ 
 }
 
 #menu li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
+    text-decoration: none;
 }
 
-#menu a {
-    text-decoration: none;
-    color: inherit;
-}
 
 #menu a:hover {
     border-bottom: 2px solid #9271a7;
 }
 
+#menu a {
+    text-decoration: none;
+}
+
 .active {
         border-bottom: 2px solid #9271a7;
 }
+
 
 /* hero-image and cover text*/
 
@@ -74,12 +90,12 @@ h1, h2 {
 }
 
 #hero-image {
-    height: 600px;;
+    height: 600px;
     width: 100%;
     background: url('../images/mother-daughter3.jpeg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: 100% auto; 
 }
 
 #cover-text {
@@ -113,7 +129,7 @@ h1, h2 {
 
     #menu {
         clear: left;
-        float: left;
+        display:flex;
         margin-left: 30px;
         margin-bottom: 20px;
         line-height: 25px;
@@ -124,9 +140,13 @@ h1, h2 {
     }
 }
 
-    @media only screen and (max-width: 480px) {
-        img {
-        width: 100%;
+@media screen and (max-width: 480px) {
+    #hero-image {
+        width: 100% auto;
+        height: auto;
+        padding-top: 43%;
+        background-size: 100% auto;
         }
         }
+
 
