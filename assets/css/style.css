@@ -39,6 +39,7 @@ ul {
 }
 
 /*Create a horizontal list with spacing*/
+
 li {
     display: inline-block;
     vertical-align: top;
@@ -46,6 +47,7 @@ li {
 }
 
 /*Style for menu links*/
+
 li a {
     display: block;
     min-width: 140px;
