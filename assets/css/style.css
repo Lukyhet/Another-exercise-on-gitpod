@@ -167,7 +167,6 @@ input[type=checkbox]:checked~#menu {
 
 /* hero-image and cover-text */
 
-
 #hero-image {
 
     height: 600px;
@@ -177,6 +176,24 @@ input[type=checkbox]:checked~#menu {
     background-repeat: no-repeat;
     background-size: 100% auto; 
     overflow: hidden;   
+}
+
+
+/* responsive google-maps widget following instructions by https://muffingroup.com/blog/responsive-google-maps/ */
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 
